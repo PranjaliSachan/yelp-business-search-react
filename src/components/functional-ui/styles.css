@@ -1,0 +1,30 @@
+/* Text Display */
+.fui-text-display1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.fui-text-display2 {
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+.fui-text-display3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.fui-text-display4 {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.fui-text-display5 {
+    font-size: 1.125em;
+    font-weight: 200;
+}
+
+.fui-text-display6 {
+    font-size: 0.875em;
+    font-weight: 100;
+}

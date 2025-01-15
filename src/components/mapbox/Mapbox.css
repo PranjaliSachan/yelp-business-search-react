@@ -1,0 +1,34 @@
+.fui-mapbox {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+}
+
+.fui-location-marker {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/88/Map_marker.svg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.mapboxgl-popup-content {
+    font-size: 1.188em;
+    font-weight: lighter;
+    color: #262626;
+    background-color: #FAFAFA;
+    border-radius: 0.25em;
+    letter-spacing: 0.063em;
+    margin: 0.75em;
+    padding: 1.2em 0.375em 0.375em 0.375em;
+    height: 21em;
+    overflow: auto;
+    width: 32em;
+    text-align: left;
+}
+
+.mapboxgl-popup-close-button {
+    font-size: 1.188em;
+    font-weight: lighter;
+    padding-right: 0.375em;
+}
