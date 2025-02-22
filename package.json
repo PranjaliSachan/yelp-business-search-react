@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:7987"
+  "proxy": "https://yelp-business-search-node-api.onrender.com"
 }
