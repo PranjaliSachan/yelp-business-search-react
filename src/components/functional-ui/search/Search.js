@@ -4,6 +4,7 @@ import { TextField } from '@fluentui/react/lib/TextField';
 import { DefaultButton } from "@fluentui/react/lib/Button";
 import { Depths } from '@fluentui/theme';
 import './Search.css';
+import { config } from "../../../config";
 
 const tagsDropdownStyles = {
     dropdown: { width: 200 },
@@ -74,7 +75,7 @@ function SearchComponent({ updateParams, updateSearchResults }) {
             updateParams({ latitude: coords.latitude, longitude: coords.longitude });
 
             // get location using reverse geocoding
-            fetch(`/api/v1/integrations/locationiq/reverse?lat=${coords.latitude}&lon=${coords.longitude}`)
+            fetch(`${config.integrationApi}api/v1/integrations/locationiq/reverse?lat=${coords.latitude}&lon=${coords.longitude}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
@@ -125,9 +126,7 @@ function SearchComponent({ updateParams, updateSearchResults }) {
         }
         const query = queryParams.join('&');
 
-        console.log('/api/v1/integrations/yelp/businesses?' + query);
-
-        fetch('/api/v1/integrations/yelp/businesses?' + query)
+        fetch(`${config.integrationApi}api/v1/integrations/yelp/businesses?` + query)
             .then(res => res.json())
             .then(data => updateSearchResults(data))
             .catch(error => console.error('ECOMMERCE API ERROR: ', error));
